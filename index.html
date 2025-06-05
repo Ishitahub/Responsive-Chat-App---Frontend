@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo"> <button id="toggle-sidebar" class="sidebar-toggle">☰</button> <span class="logo-text">Logo</span></div>
+        <div class="chat-list">
+          <div class="chat-item active">
+            <div class="avatar online">AB</div>
+            <div class="chat-info">
+              <div class="name-time">
+                <span class="name">Anthony Bridgerton</span>
+                <span class="time">12:45 PM</span>
+              </div>
+              <div class="preview">I've sent you the latest project files...</div>
+            </div>
+          </div>
+          <div class="chat-item">
+            <div class="avatar green">DS</div>
+            <div class="chat-info">
+              <div class="name-time">
+                <span class="name">Damon Salvatore</span>
+                <span class="time">Yesterday</span>
+              </div>
+              <div class="preview">Are we still meeting for coffee...</div>
+            </div>
+          </div>
+        </div>
+        
+      </aside>
+
+      <main class="chat-area">
+        <header class="chat-header">
+          <div class="contact-info">
+            <div class="avatar large online">AB</div>
+            <div class="contact-text">
+              <div class="name">Anthony Bridgerton</div>
+              <div class="status">Online</div>
+            </div>
+          </div>
+          <div class="right-actions">
+           <button id="theme-toggle" class="theme-toggle">🌙</button>
+          <div class="profile-avatar">IS</div>
+          </div>
+        </header>
+
+        <section class="messages" id="messages">
+          <div class="message received">
+            <p>Sounds great! I've heard good things about their posts. Looking forward to it.</p>
+            <span class="time">12:00 PM</span>
+          </div>
+          <div class="message received">
+            <p>
+              Oh, I almost forgot - do you have the latest version of the client presentation? I want to
+              make sure we're all on the same page for tomorrow.
+            </p>
+            <span class="time">12:05 PM</span>
+          </div>
+          <div class="message sent">
+            <p>
+              I've just sent it to your email. It includes all the updates we discussed in the last
+              meeting. Let me know if you need anything else!
+            </p>
+            <span class="time">12:15 PM</span>
+          </div>
+          <div class="message received">
+            <p>Got it, thanks! I’ll review it before our lunch. See you soon!</p>
+            <span class="time">12:20 PM</span>
+          </div>
+          <div class="message sent">
+            <p>Looking forward to it! 🔥</p>
+            <span class="time">12:25 PM</span>
+          </div>
+        </section>
+
+        <form class="input-area" id="chat-form">
+          <input
+            type="text"
+            id="message-input"
+            placeholder="Type your message..."
+            autocomplete="off"
+          />
+          <button type="submit">
+            <span>&#10148;</span>
+          </button>
+        </form>
+      </main>
+    </div>
+    <footer class="footer">
+  <p>© 2025 Modern Chat App. All rights reserved.</p>
+</footer>
+
+  </body>
+</html>
